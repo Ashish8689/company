@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	background: #f0f0f0;
+}
+
+body{
+	background: #f0f0f0;
+    overflow-x: hidden;
+}
+
+.container-fluid{
+	background: #f0f0f0;
+}
+
+/****  Back button  ***/
+.fa-stack{
+    position: absolute!important;
+    top:20px;
+    left:40px;
+    font-size: 22px;
+    color: #c788ff;
+    transition: .4s;
+    z-index: 999;
+}
+.fa-stack:hover{
+    color:#8b40d8;
+}
+
+/****  Logout button  ******/
+
+.logout-container{
+	position: absolute;
+    top:20px;
+    right:40px;
+    width: auto;
+    display: flex;
+}
+.logout{
+    padding:10px 20px;
+    font-size: 16px;
+    color: whitesmoke;
+    font-weight: bold;
+    transition: .4s;
+    border-radius: 30px;
+    background: #ff5363;
+    outline: none;
+    border: 2px solid #ff5363; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.logout a{
+    color: whitesmoke;
+    text-decoration: none;
+} 
+
+.logout a:hover{
+	text-decoration: none!important;
+}
+
+.logout i{
+    margin-right: 10px;
+    color: whitesmoke;
+}
+.logout:hover{
+    background: transparent;
+    color: #ff5363;
+    text-decoration: none;
+}
+
+.logout:hover i{
+    background: transparent;
+    color: #ff5363!important;
+}
+
+.logout:hover a{
+	color: #ff5363;
+	text-decoration: none;
+}
+
+
+/* *********  Homepage  ************* */
+
+.home-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn{
+    padding: 17px 50px;
+    text-decoration: none;
+    color:whitesmoke;
+    border:2px solid #c788ff;
+    background: #c788ff;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition:.4s;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn:hover{
+    background: transparent;
+    color: #c788ff;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.3);
+}
+
+
+/* *****************   Login Form  ********************** */
+
+
+.login-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #f0f0f0;
+    position: relative;
+}
+
+.content{
+    width: 100%;
+    max-width:500px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 12px rgba(0,0,0,.4);
+}
+
+.content .heading{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+ 
+ .form1{
+ 	text-align: center;
+ 	width: 90%;
+ }
+
+ .form1 .form-group{
+ 	display: flex;
+    margin:15px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+ .form1 .form-group label{
+    padding:10px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+}
+
+ .form1 .form-group input{
+    padding:10px 20px;
+    border-radius: 4px;
+    width: 50%;
+    border:none;
+    transition: .3s;
+    border: 2px solid #3f3b3b;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+ .form1 .form-group input:focus{
+    outline: none;
+    box-shadow: 0 10px 10px rgba(0,0,0,.5);
+}
+
+ .form1 .btn-login{
+    margin:30px 0 0 0;
+    padding: 12px 40px;
+    text-decoration: none;
+    color:whitesmoke;
+    border:2px solid #c788ff;
+    background: #c788ff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 24px;
+    transition:.4s;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+ .form1 .btn-login:hover{
+    background: transparent;
+    color: #c788ff;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.3);
+}
+
+
+
+/* ****************   Add Client form  ********************** */
+
+.form-heading{
+   margin:40px 0 0 0;
+   font-size: 50px;
+   text-align: center;
+   font-weight: 800;
+   background: #f0f0f0;
+}
+
+ .form2{
+    padding:70px 0 100px 0; 
+    background: #f0f0f0;
+}
+
+ .form2 .form-group{
+    display: flex;
+}
+
+ .form2 .form-group label{
+    margin-left: 50px;
+}
+
+ .form2 .form-group input{
+    margin-left:auto; 
+    width:70%;
+}
+
+ .form2 .form-group-radio label{
+    margin-left: 50px;
+}
+
+ .form2 .form-group-radio span{
+    margin-left: 10px;
+}
+
+ .form2 .btn-login{
+     display: block;
+     margin:50px auto;
+     padding:10px 30px;
+     border-radius: 24px;
+     border:2px solid #c788ff;
+     outline: none;
+     color: #c788ff;
+     font-weight: 700;
+     transition: .3s;
+}
+
+ .form2 .btn-login:hover{
+    background: #c788ff;
+    color: whitesmoke;
+    padding:10px 70px;
+}
+
+
+
+/* *************  Notification bar  ************* */
+
+.notification{
+    position: relative;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notification i{
+    font-size: 24px;
+    transition: .3s;
+}
+
+.notification p{
+    position: absolute;
+    top:3px;
+    right:23px;
+    background:#8b40d8;
+    background: red;
+    color: whitesmoke;
+    font-size: 8px;
+    padding: 2px 7px;
+    border-radius: 50%;
+    transition: .3s;
+    z-index: 111;
+}
+
+.dropdown{
+    list-style: none;
+}
+.dropdown a{
+    color: #c788ff;
+}
+
+.dropdown-menu a{
+    width:250px; 
+    height: auto;
+    overflow-x: hidden;
+    padding:10px;
+}
+
+.text{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+.text .header{
+	padding: 20px 50px;
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+ .mess-content{
+    margin-top: 50px;
+    text-align: left;
+    padding:20px 30px;
+}
+
+.mess-content p{
+    display: inline-block;
+    width: 100%;
+    max-width: 500px!important;
+    font-size: 20px;
+    font-weight: 700;
+    padding:20px 20px;
+    border: 2px solid black;
+}
+
+
+/* ***********   Form Message  **************** */
+
+.mess-form{
+    padding:50px 0;
+    text-align: center;
+    width: 100%;
+}
+.mess-form .form-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mess-form .form-group textarea{
+    width: 40%;
+    height: 150px;
+    border-radius: 4px;
+    resize: none;
+    border:1.5px solid black;
+    padding:20px;
+    font-weight: 600;
+    background: #f0f0f0;
+}
+
+.mess-form .form-group button{
+    margin:0 50px;
+    padding:10px 40px;
+    background: #c788ff;
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 17px;
+    border:2px solid #c788ff;
+}
+
+.mess-form .form-group button:hover{
+    background: transparent;
+    color: #c788ff;
+}
+
+
+
