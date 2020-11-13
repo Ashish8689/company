@@ -11,7 +11,7 @@
   <!-- Fontawesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
-  <!-- <style>
+  <style>
    
    .form2{
     padding-top:0px;
@@ -21,7 +21,7 @@
     margin-bottom: 50px;
    }
   
-  </style> -->
+  </style>
 
 </head>
 

@@ -203,14 +203,14 @@ else{
        if($res){
         ?>
         <script>
-          alert('Data Updated');
+          alert('Message Send');
         </script>
         <?php
        }
        else{
         ?>
         <script>
-          alert('not Updated');
+          alert('Error sending message');
         </script>
         <?php
        }

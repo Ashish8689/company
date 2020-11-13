@@ -33,6 +33,17 @@ else{
 	<!-- Fontawesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
+ <style>
+   
+   .none{
+    display: none;
+   }
+
+
+ </style>
+   
+
+
 
 
 </head>
@@ -81,7 +92,7 @@ else{
    <div class="text">
    	 <h1 class="header">Hello <?php echo $name ?></h1>
    	  <div class="mess-content">
-   	       <p><?php echo $fetch['message']?></p>
+   	       <p class="para"><?php echo $fetch['message']?></p>
    	  </div>
    </div>
 
@@ -91,3 +102,16 @@ else{
 
 </body>
 </html>
+
+
+<?php
+
+ if($fetch['message'] == ''){
+  ?>
+  <script>
+     $('.para').toggle('none');
+  </script>
+  <?php
+ }
+
+?>
